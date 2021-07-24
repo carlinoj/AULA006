@@ -1,2 +1,5 @@
 # AULA006
 Aula 06 - Node - STEP COMPUTER ACADEMY
+
+Projetos - DEVER -> DEVER DE CASA / TEMA -> Aula
+
