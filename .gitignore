@@ -34,6 +34,7 @@ build/Release
 
 # Dependency directories
 dever/node_modules/
+tema/stepchat/node_modules
 jspm_packages/
 
 # Typescript v1 declaration files
