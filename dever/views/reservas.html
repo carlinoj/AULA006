@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESERVAS - HOTEL</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <style>
+        label{
+            text-align: right;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">HOME</a>
+        <br>
+        <a href="/quartos">Quartos</a>
+        <br>
+        <a href="/reservas">Reservas</a>
+    </nav>
+
+    <h1>Página de Reservas</h1>
+
+    <div id="formulario" class="container jumbotron" name="formReservas">
+        <form class="form-horizontal">
+            <fieldset>
+
+                <!-- Form Name -->
+                <legend>Cadastro de Reservas</legend>
+
+                <!-- Text input-->
+                <div class="form-group row">
+                    <label class="col-md-4 control-label" for="inputNome">Nome</label>
+                    <div class="col-md-5">
+                        <input id="inputNome" name="inputNome" type="text" placeholder="Nome Completo"
+                            class="form-control input-md">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group row">
+                    <label class="col-md-4 control-label" for="inputEntrada">Data de Entrada</label>
+                    <div class="col-md-4">
+                        <input id="inputEntrada" name="inputEntrada" type="date"
+                            class="form-control input-md">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group row">
+                    <label class="col-md-4 control-label" for="unputSaida">Data de Saida</label>
+                    <div class="col-md-4">
+                        <input id="unputSaida" name="unputSaida" type="date" 
+                            class="form-control input-md">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group row">
+                    <label class="col-md-4 control-label" for="inputIdReserva">ID da Reserva</label>
+                    <div class="col-md-2">
+                        <input id="inputIdReserva" name="inputIdReserva" type="text" 
+                            class="form-control input-md">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group row">
+                    <label class="col-md-4 control-label" for="inputQuarto">Número do Quarto</label>
+                    <div class="col-md-2">
+                        <input id="inputQuarto" name="inputQuarto" type="text" 
+                            class="form-control input-md">
+
+                    </div>
+                </div>
+
+                <!-- Multiple Checkboxes (inline) -->
+                <div class="form-group row">
+                    <label class="col-md-4 control-label" for="checkPagamento">Formas de Pagamento</label>
+                    <div class="col-md-4">
+                        <label class="checkbox-inline" for="checkPagamento-0">
+                            <input type="checkbox" name="checkPagamento" id="checkPagamento-0" value="d">
+                            Dinheiro
+                        </label>
+                        <label class="checkbox-inline" for="checkPagamento-1">
+                            <input type="checkbox" name="checkPagamento" id="checkPagamento-1" value="c">
+                            Cartão
+                        </label>
+                        <label class="checkbox-inline" for="checkPagamento-2">
+                            <input type="checkbox" name="checkPagamento" id="checkPagamento-2" value="p">
+                            PIX
+                        </label>
+                        <label class="checkbox-inline" for="checkPagamento-3">
+                            <input type="checkbox" name="checkPagamento" id="checkPagamento-3" value="o">
+                            Online
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <div class="form-group row">
+                    <div class="col-md-4">
+                        <button type="button" id="" name="" class="btn btn-success">Cadastrar Reservas</button>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+
+    </div>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</html>
