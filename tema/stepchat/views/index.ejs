@@ -19,16 +19,18 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
   <script>
+    var usuario = sessionStorage.getItem('usuario');
+    
     $(function () {
       var socket = io();
       $('form').submit(function(){
-        socket.emit('Mensagem do Chat', $('#m').val());
+        socket.emit('Mensagem do Chat', (usuario + " diz: " + $('#m').val()));
         $('#m').val('');
         return false;
       });
 
       socket.on("Mensagem do Chat", function(msg){
-        $('#messages').append($('<li').text(msg))
+        $('#messages').append($('<li>').text(msg))
       });
     });
 
